@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Captch Validation Form</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="index.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-6 div1">
+            <video width="100%" controls autoplay loop>
+                <source src="car.mp4" type="video/mp4">
+                
+              </video>
+          </div>
+          <div class="col-sm-6">
+            <h1 class="tit">Welcome to TechFrizz</h1>
+            <p id="puff">To become a part of TechFrizz, Please fill the below form for better communication and understanding between us..!!!😁😁</p>
+            <!--Form starts here-->
+            <div class="form2">
+                <div class="container text-center" style="width: 500px;">
+                    <div class="row">
+                      <!-- <div class="col-sm-2"> 
+                      </div> -->
+                      <div class="col-sm-6 form3 text-center" style="width: 500px;" >
+                        <form name="myform">
+                            <label for="fname">First name<span class="required">*</span>:  </label><br>
+                                <input type="text" id="firstname" name="firstname" required ><br>
+                                <label for="lname">Last name<span class="required">*</span>:</label><br>
+                                <input type="text" id="lastname" name="lastname" required ><br>
+                                <label for="email">Email:</label><br>
+                                <input type="text" id="emailid" name="emailid" ><br>
+                                <label for="msg">Your Message<span class="required">*</span>:</label><br>
+                                <input type="text" id="msgtxt" name="msgtxt" required onmouseleave="mouseLeave()"><br><br>
+                                <div class="g-recaptcha" data-sitekey="6LcCl44gAAAAAGUNlbY2CtCO9wN2pFHTwVL-ycHn" data-callback="verifyCaptcha"></div>
+                                <div id="g-recaptcha-error"></div>
+                                <div class="container" style="padding-bottom:40px ;"></div>
+                                <button type="submit" id="con" class="btn" onclick="signup();">Sign Up</button>
+                            </div>
+                        </form>
+                      <!-- <div class="col-sm-2">
+                      </div> -->
+                    </div>
+                </div>
+            </div>
+            <!--Form ends here-->
+          </div>
+          
+        </div>
+      </div>
+</body>
+</html>
+
+C:
